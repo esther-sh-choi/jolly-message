@@ -1,0 +1,16 @@
+.patternPicker {
+  display: flex;
+  width: fit-content;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.pattern {
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 10px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}

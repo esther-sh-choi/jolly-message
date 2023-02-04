@@ -1,0 +1,51 @@
+@import '../../variables.scss';
+
+.searchFieldContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary-background;
+  padding: 5px;
+  height: 49px;
+  border-radius: 18px;
+  position: relative;
+}
+
+.searchLabel {
+  font-family: $grotesk-bold;
+  font-size: 15px;
+  padding: 0 10px;
+  color: $white;
+}
+
+.searchInputField {
+  flex: 1;
+  border-radius: 13px;
+  padding: 0 44px 0 13px;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-family: $grotesk-medium;
+  font-size: 15px;
+
+  &::placeholder {
+    color: #b9b9b9;
+  }
+}
+
+.cancelButton {
+  position: absolute;
+  right: 8px;
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+
+  &.active {
+    opacity: 1;
+  }
+}

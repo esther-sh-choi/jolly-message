@@ -1,0 +1,101 @@
+@import './variables.scss';
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  background-color: $primary-background;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+@media screen and (max-width: 479px) {
+  .floor {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  :root {
+    background: #dbdeff;
+    background: linear-gradient(to bottom, #958cff 0%, #6cb8ff 100%);
+    animation: change 5s ease-in-out infinite;
+    overflow: auto;
+    position: relative;
+    background-size: cover;
+  }
+
+  .floor {
+    position: fixed;
+    bottom: 0%;
+    height: 200px;
+    width: 100%;
+
+    background-image: linear-gradient(
+      to bottom,
+      #fff 0%,
+      rgb(236, 236, 236) 100%
+    );
+  }
+
+  .items {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+
+  .snowman {
+    position: absolute;
+    height: 600px;
+    top: -400px;
+    left: calc(100vw / 2 - 820px);
+  }
+
+  .gingerbread {
+    position: absolute;
+    height: 400px;
+    top: -250px;
+    right: calc(100vw / 2 - 820px);
+  }
+
+  .giftYellow {
+    position: absolute;
+    top: 0;
+    right: calc(100vw / 2 - 580px);
+  }
+
+  .giftGreen {
+    position: absolute;
+    top: -70px;
+    right: calc(100vw / 2 - 500px);
+  }
+
+  .giftRed {
+    position: absolute;
+    top: 0;
+    left: calc(100vw / 2 - 450px);
+  }
+
+  .app {
+    position: absolute;
+    left: calc(100vw / 2 - 200px);
+    top: calc(100vh / 2 - 450px);
+    height: 900px;
+    width: 400px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 10px #fff;
+    -moz-box-shadow: 0 0 5px #fff;
+    box-shadow: 0 0 10px #fff;
+    z-index: 1;
+  }
+
+  @media screen and (max-height: 900px) {
+    .app {
+      top: 50px;
+      margin-bottom: 50px;
+    }
+
+    .floor {
+      height: calc(950px - 100vh);
+    }
+  }
+}

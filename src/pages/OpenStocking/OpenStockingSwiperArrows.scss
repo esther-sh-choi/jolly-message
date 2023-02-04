@@ -1,0 +1,19 @@
+@import '../../variables.scss';
+
+.swiper {
+  .swiper-button-next {
+    color: $highlight;
+  }
+
+  .swiper-button-prev {
+    color: $highlight;
+  }
+
+  .swiper-button-next:after {
+    color: $highlight;
+  }
+
+  .swiper-button-prev:after {
+    color: $highlight;
+  }
+}

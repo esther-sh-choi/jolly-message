@@ -1,0 +1,78 @@
+@import '../../variables.scss';
+
+.signupPage {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: $main-font;
+  background-color: $white;
+}
+
+.signupMain {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.signupHeader {
+  width: 100%;
+  color: $highlight;
+  font-family: $grotesk-semibold;
+  font-size: 27px;
+  font-weight: 600;
+  text-align: left;
+  align-self: flex-start;
+  padding: 30px 30px 40px;
+}
+
+.separatorLineCaption {
+  color: #000000;
+  padding: 55px 0;
+}
+
+.signupBody {
+  flex: 1;
+  padding: 30px 30px 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.formLabel {
+  font-family: $main-font;
+  font-size: 16px;
+}
+
+.textField {
+  margin-bottom: 10px;
+  background-color: #ffffff;
+}
+
+.agreeToTermLink {
+  font-weight: bold;
+}
+
+.submitButtonContainer {
+  position: relative;
+}
+
+.submitBtn {
+  height: 50px;
+}
+
+.loginLinkContainer {
+  display: flex;
+  justify-content: center;
+  padding-top: 17px;
+  color: #464646;
+
+  p {
+    padding-right: 5px;
+  }
+}

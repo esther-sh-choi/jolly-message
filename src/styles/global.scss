@@ -1,0 +1,59 @@
+@import './reset.scss';
+
+@font-face {
+  font-family: 'HKGroteskLight';
+  src: local('HKGroteskLight'),
+    url('../fonts/HKGrotesk-Light.woff2') format('woff2'),
+    url('../fonts/HKGrotesk-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'HKGroteskRegular';
+  src: local('HKGroteskRegular'),
+    url('../fonts/HKGrotesk-Regular.woff2') format('woff2'),
+    url('../fonts/HKGrotesk-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'HKGroteskMedium';
+  src: local('HKGroteskMedium'),
+    url('../fonts/HKGrotesk-Medium.woff2') format('woff2'),
+    url('../fonts/HKGrotesk-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'HKGroteskSemibold';
+  src: local('HKGroteskSemibold'),
+    url('../fonts/HKGrotesk-Semibold.woff2') format('woff2'),
+    url('../fonts/HKGrotesk-Semibold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'HKGroteskBold';
+  src: local('HKGroteskBold'),
+    url('../fonts/HKGrotesk-Bold.woff2') format('woff2'),
+    url('../fonts/HKGrotesk-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'HKGroteskExtraBold';
+  src: local('HKGroteskExtraBold'),
+    url('../fonts/HKGrotesk-Black.woff2') format('woff2'),
+    url('../fonts/HKGrotesk-Black.woff') format('woff');
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

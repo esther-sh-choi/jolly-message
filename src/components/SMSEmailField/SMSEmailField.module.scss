@@ -1,0 +1,40 @@
+@import '../../variables.scss';
+
+.emailLabel {
+  font-family: $main-font;
+  font-size: 16px;
+  color: $black;
+
+  &.error {
+    color: $input-error;
+  }
+}
+
+.emailInputContainer {
+  margin: 4px 0 14px;
+
+  .emailInputField {
+    height: 49px;
+    border-radius: 6px;
+    margin-bottom: 4px;
+    padding: 0 10px;
+    width: 100%;
+    border: solid 1px #333;
+    font-family: $main-font;
+    font-size: 16px;
+    color: $input-color;
+
+    &.error {
+      border-color: $input-error;
+      &:focus {
+        outline-color: $input-error;
+      }
+    }
+  }
+
+  .helperText {
+    color: $input-error;
+    padding: 0 5px;
+    font-size: 13px;
+  }
+}

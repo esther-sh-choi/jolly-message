@@ -1,0 +1,70 @@
+@import '../../variables.scss';
+
+.thumbsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-height: 140px;
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.thumb {
+  display: flex;
+  justify-content: center;
+  height: 80%;
+}
+
+.closeButton {
+  position: absolute;
+  z-index: 3;
+  top: -5px;
+  right: -5px;
+  -webkit-tap-highlight-color: transparent;
+  width: 56px;
+  height: 56px;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.imageDropIcon {
+  height: 50px;
+}
+
+.img {
+  max-height: 120px;
+  max-width: 85vw;
+}
+
+.fileName {
+  font-family: $grotesk-bold;
+  font-size: 12px;
+  font-weight: bold;
+  color: $highlight;
+  text-align: center;
+  padding-top: 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.imageDropInstruction {
+  font-family: $grotesk-bold;
+  font-size: 15px;
+  font-weight: bold;
+  color: $highlight;
+  text-align: center;
+  padding-top: 5px;
+
+  .instructionFileType {
+    font-family: $grotesk-medium;
+    font-size: 14px;
+    color: #ababab;
+  }
+}

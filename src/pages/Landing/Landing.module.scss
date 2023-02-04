@@ -1,0 +1,192 @@
+@import '../../variables.scss';
+
+.landingPage {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.landingTop {
+  flex: 1;
+  position: relative;
+  color: #ffffff;
+  font-size: 58px;
+  line-height: 70px;
+  padding-top: 40px;
+}
+
+.landingTitle {
+  padding: 25px 0 0 64px;
+  font-family: $grotesk-bold;
+}
+
+.secondLine {
+  display: flex;
+  align-items: center;
+}
+
+.blueStocking {
+  padding-left: 12px;
+  animation-name: spinStocking;
+  animation-iteration-count: infinite;
+  animation-delay: 3.2s;
+  animation-duration: 7s;
+}
+
+.fireplaceImage {
+  position: absolute;
+  bottom: -15px;
+  left: calc(50% - 152px);
+}
+
+.giftLarge {
+  position: absolute;
+  bottom: -30px;
+  right: 60px;
+  animation-name: shakeAnimation;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-delay: 4s;
+}
+
+.giftSmall {
+  position: absolute;
+  bottom: -35px;
+  right: 30px;
+  animation-name: shakeAnimation;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-delay: 4.1s;
+}
+
+.landingBottom {
+  height: 30vh;
+  background-color: #f6f5f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 31px;
+}
+
+.loginBtn {
+  height: 49px;
+  margin-bottom: 16px;
+}
+
+.signupBtn {
+  height: 49px;
+}
+
+@keyframes spinStocking {
+  0% {
+    transform: rotate(0deg);
+  }
+  1% {
+    transform: rotate(90deg);
+  }
+  2% {
+    transform: rotate(180deg);
+  }
+  3% {
+    transform: rotate(270deg);
+  }
+  4% {
+    transform: rotate(360deg);
+    transform: translateY(0px);
+  }
+  6% {
+    transform: translateY(5px);
+  }
+  8% {
+    transform: translateY(0px);
+  }
+  10% {
+    transform: translateY(5px);
+  }
+  12% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes shakeAnimation {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: 0% 0%;
+  }
+  2% {
+    transform: rotate(-5deg);
+    transform-origin: 50% 25%;
+  }
+  4% {
+    transform: rotate(5deg);
+    transform-origin: 25% 50%;
+  }
+  6% {
+    transform: rotate(-5deg);
+    transform-origin: 50% 25%;
+  }
+  8% {
+    transform: rotate(5deg);
+    transform-origin: 25% 50%;
+  }
+  10% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.stuff {
+  animation-name: shakeAnimation;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+
+.my {
+  animation-name: shakeAnimation;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-delay: 1.7s;
+}
+
+.stocking {
+  animation-name: shakeAnimation;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-delay: 2.4s;
+}
+
+@media screen and (min-width: 480px) {
+  .landingTop {
+    font-size: 50px;
+  }
+
+  .landingTitle {
+    padding: 25px 0 0 50px;
+  }
+
+  .landingBottom {
+    height: 275px;
+  }
+}
+
+@media screen and (max-height: 815px) and (max-width: 479px) {
+  .landingTop {
+    font-size: 40px;
+    letter-spacing: 3px;
+    line-height: normal;
+  }
+
+  .blueStocking {
+    height: 50px;
+  }
+
+  .landingTitle {
+    padding: 10px 0 0 50px;
+  }
+}

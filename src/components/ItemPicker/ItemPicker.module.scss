@@ -1,0 +1,16 @@
+.itemPickerContainer {
+  width: 100%;
+  display: flex;
+  width: fit-content;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.item {
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.12);
+  margin: 10px;
+  object-fit: cover;
+  cursor: pointer;
+}

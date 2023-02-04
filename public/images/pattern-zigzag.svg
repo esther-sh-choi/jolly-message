@@ -1,0 +1,41 @@
+<svg width="59" height="58" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g mask="url(#zcotaiut2b)" stroke="#fff" stroke-width="1.124" stroke-miterlimit="10">
+        <path d="m3.725 2.659 7.259-6.522 7.2 6.462"/>
+        <path d="m17.724 2.659 7.265-6.522 7.195 6.462"/>
+        <path d="m31.741 2.659 7.26-6.522 7.2 6.462"/>
+        <path d="m45.741 2.659 7.265-6.522 7.195 6.462M3.725 10.367l7.259-6.516 7.2 6.462"/>
+        <path d="m17.724 10.367 7.265-6.516 7.195 6.462"/>
+        <path d="m31.741 10.367 7.26-6.516 7.2 6.462"/>
+        <path d="m45.741 10.367 7.265-6.516 7.195 6.462M3.725 18.081l7.259-6.516 7.2 6.462"/>
+        <path d="m17.724 18.081 7.265-6.516 7.195 6.462"/>
+        <path d="m31.741 18.081 7.26-6.516 7.2 6.462"/>
+        <path d="m45.741 18.081 7.265-6.516 7.195 6.462M3.725 25.796l7.259-6.522 7.2 6.462"/>
+        <path d="m17.724 25.796 7.265-6.522 7.195 6.462"/>
+        <path d="m31.741 25.796 7.26-6.522 7.2 6.462"/>
+        <path d="m45.741 25.796 7.265-6.522 7.195 6.462M3.725 33.51l7.259-6.522 7.2 6.462"/>
+        <path d="m17.724 33.51 7.265-6.522 7.195 6.462"/>
+        <path d="m31.741 33.51 7.26-6.522 7.2 6.462"/>
+        <path d="m45.741 33.51 7.265-6.522 7.195 6.462M3.725 41.224l7.259-6.522 7.2 6.462"/>
+        <path d="m17.724 41.224 7.265-6.522 7.195 6.462"/>
+        <path d="m31.741 41.224 7.26-6.522 7.2 6.462"/>
+        <path d="m45.741 41.224 7.265-6.522 7.195 6.462M3.725 48.932l7.259-6.517 7.2 6.463"/>
+        <path d="m17.724 48.932 7.265-6.517 7.195 6.463"/>
+        <path d="m31.741 48.932 7.26-6.517 7.2 6.463"/>
+        <path d="m45.741 48.932 7.265-6.517 7.195 6.463M3.725 56.646l7.259-6.516 7.2 6.457"/>
+        <path d="m17.724 56.646 7.265-6.516 7.195 6.457"/>
+        <path d="m31.741 56.646 7.26-6.516 7.2 6.457"/>
+        <path d="m45.741 56.646 7.265-6.516 7.195 6.457"/>
+    </g>
+    <defs>
+        <filter id="p36udv3kda" x=".741" y="0" width="58" height="58" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset dy="4"/>
+            <feGaussianBlur stdDeviation="2"/>
+            <feComposite in2="hardAlpha" operator="out"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0"/>
+            <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_235_6644"/>
+            <feBlend in="SourceGraphic" in2="effect1_dropShadow_235_6644" result="shape"/>
+        </filter>
+    </defs>
+</svg>

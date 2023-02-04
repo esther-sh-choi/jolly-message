@@ -1,0 +1,21 @@
+@import '../../variables.scss';
+
+.tabsContainer {
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+  position: relative;
+}
+
+.tabIndicatorContainer {
+  position: absolute;
+  transition: ease 0.2s;
+  bottom: 0;
+}
+
+.tabIndicator {
+  background-color: $primary-button;
+  height: 5px;
+  border-radius: 5px;
+  margin: 0 30%;
+}

@@ -1,0 +1,87 @@
+@import '../../variables.scss';
+
+.writeMessagePage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.writeMessagesMain {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.writeMessageHeader {
+  width: 100%;
+  color: $white;
+  text-align: left;
+  align-self: flex-start;
+  padding: 40px 30px 50px;
+
+  .writeMessageTitle {
+    font-family: $grotesk-semibold;
+    font-size: 27px;
+    font-weight: 600;
+  }
+}
+
+.writeMessageBody {
+  flex: 1;
+  background-color: $white;
+  border-radius: 20px 20px 0 0;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nicknameField {
+  margin-bottom: 20px;
+}
+
+.messageContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: $primary-background;
+  padding: 0 5px 5px;
+  border-radius: 18px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.messageLabel {
+  font-family: $grotesk-bold;
+  font-size: 15px;
+  padding: 10px 15px;
+  color: $white;
+}
+
+.messageField {
+  flex: 1;
+  border-radius: 13px;
+  padding: 7px 15px;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-family: $grotesk-regular;
+  font-size: 15px;
+
+  &::placeholder {
+    color: #b9b9b9;
+  }
+}
+
+.submitMessageBtn {
+  height: 49px;
+  margin: 30px;
+}
+
+.textCounter {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  color: #b9b9b9;
+  font-size: 15px;
+}

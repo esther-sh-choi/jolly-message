@@ -1,0 +1,181 @@
+@import '../../variables.scss';
+
+.navigationMenu {
+  position: absolute;
+  background-color: $white;
+  width: 100vw;
+  height: 100vh;
+  right: 0;
+  color: $black;
+  display: flex;
+  flex-direction: column;
+
+  .closeButton {
+    align-self: flex-end;
+    -webkit-tap-highlight-color: transparent;
+    width: 56px;
+    height: 56px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .menuList {
+    padding: 65px 0;
+  }
+
+  .menuItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $grotesk-regular;
+    color: $highlight;
+    font-size: 18px;
+    margin: 10px 15px;
+    padding: 24px 10px 24px 20px;
+    border-radius: 18px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.08);
+    border: solid 2px #dfdfdf;
+    background-color: #fff;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #eeeeee;
+    }
+  }
+
+  .menuItemButton {
+    display: flex;
+    align-items: center;
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.logoutButton {
+  margin: 50px 30px;
+  height: 49px;
+  margin-top: auto;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.guestAvatar {
+  border-radius: 50%;
+  background-color: #bababa;
+  height: 90px;
+  width: 90px;
+  position: relative;
+}
+
+.guestStockingImage {
+  position: absolute;
+  left: 27px;
+  top: 22px;
+}
+
+.username {
+  font-family: $grotesk-semibold;
+  font-size: 24px;
+  color: $highlight;
+  padding-top: 10px;
+}
+
+.displayEmail {
+  font-family: $grotesk-regular;
+  font-size: 16px;
+  color: $highlight;
+  padding-top: 10px;
+}
+
+.menuListGuest {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 75px 32px 50px;
+
+  .menuButtonGuest {
+    height: 49px;
+    margin-bottom: 20px;
+  }
+}
+
+.helpContact {
+  margin-top: auto;
+  color: $highlight;
+  border: solid 2px #dfdfdf;
+  border-radius: 18px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  height: 85px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10px;
+  align-self: center;
+
+  .questionMark {
+    margin-right: 10px;
+  }
+
+  .helpTitle {
+    font-family: $main-font;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+  }
+
+  .helpEmail {
+    font-family: $grotesk-regular;
+    font-size: 18px;
+    text-decoration: none;
+    color: $highlight;
+    cursor: pointer;
+    word-wrap: break-word;
+    margin-top: 5px;
+    margin-left: 32px;
+  }
+}
+
+.backdrop {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (min-width: 480px) {
+  .navigationMenu {
+    height: 900px;
+    width: 400px;
+    box-sizing: border-box;
+  }
+
+  .backdrop {
+    width: 400px;
+    height: 900px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .helpContact {
+    width: 260px;
+
+    .helpEmail {
+      font-size: 16px;
+    }
+  }
+}

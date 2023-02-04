@@ -1,0 +1,62 @@
+@import '../../variables.scss';
+
+.cropperModal {
+  position: absolute;
+  background-color: $white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 100;
+}
+
+.previewContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.previewTitle {
+  font-family: $grotesk-semibold;
+  font-size: 27px;
+  color: $highlight;
+  padding-bottom: 30px;
+}
+
+.closeButton {
+  align-self: flex-end;
+  -webkit-tap-highlight-color: transparent;
+  width: 56px;
+  height: 56px;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $highlight;
+  cursor: pointer;
+}
+
+.profilePicButtons {
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.guestAvatar {
+  border-radius: 50%;
+  background-color: #bababa;
+  height: 90px;
+  width: 90px;
+  // margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

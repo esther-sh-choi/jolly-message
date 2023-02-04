@@ -1,0 +1,11 @@
+.palette {
+  display: flex;
+  width: fit-content;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.colorIcon {
+  margin: 10px;
+  border: 2px solid #fafafa;
+  cursor: pointer;
+}

@@ -1,0 +1,13 @@
+@import '../../variables.scss';
+
+.checkboxContainer {
+  display: flex;
+  align-items: flex-start;
+}
+
+.checkboxLabel {
+  padding-left: 5px;
+  font-family: $main-font;
+  font-size: 14px;
+  color: #464646;
+}

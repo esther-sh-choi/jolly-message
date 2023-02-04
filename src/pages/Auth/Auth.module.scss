@@ -1,0 +1,62 @@
+.auth {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 40px;
+}
+
+.authTitle {
+  padding: 5px 0;
+}
+
+.textField {
+  padding-bottom: 10px;
+}
+
+.submitBtn {
+  padding-top: 10px;
+}
+
+.form {
+  padding: 10px 0;
+}
+
+.separator {
+  padding: 10px 0;
+}
+
+.googleBtn {
+  padding: 15px 0;
+}
+
+@media screen and (max-width: 280px) {
+  .auth {
+    padding: 0 20px;
+  }
+
+  .authTitle {
+    font-size: 25px;
+  }
+
+  .textField {
+    padding-bottom: 10px;
+  }
+
+  .submitBtn {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .form {
+    padding: 0;
+  }
+
+  .separator {
+    padding: 10px 0;
+  }
+
+  .googleBtn {
+    padding: 5px 0;
+  }
+}

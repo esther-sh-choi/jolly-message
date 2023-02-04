@@ -1,0 +1,17 @@
+@import '../../variables.scss';
+
+.countdownContainer {
+  display: flex;
+  font-family: $grotesk-semibold;
+  justify-content: center;
+}
+
+.timeContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeLabel {
+  font-size: 12px;
+  text-align: center;
+}

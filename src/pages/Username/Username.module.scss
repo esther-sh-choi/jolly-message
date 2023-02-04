@@ -1,0 +1,49 @@
+@import '../../variables.scss';
+
+.usernamePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  font-family: $main-font;
+  background-color: $white;
+}
+
+.usernameHeader {
+  width: 100%;
+  color: $highlight;
+  font-family: $grotesk-semibold;
+  font-size: 27px;
+  font-weight: 600;
+  text-align: left;
+  align-self: flex-start;
+  padding: 60px 30px 30px;
+}
+
+.usernameBody {
+  flex: 1;
+  background-color: $white;
+  border-radius: 20px 20px 0 0;
+  padding: 30px;
+}
+
+.usernameLabel {
+  color: $highlight;
+  font-family: $grotesk-semibold;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 47px;
+  padding-bottom: 20px;
+}
+
+.submitButtonContainer {
+  position: relative;
+}
+
+.usernameBtn {
+  height: 48px;
+}
+
+.userNameErrorPopover {
+  bottom: -150%;
+}

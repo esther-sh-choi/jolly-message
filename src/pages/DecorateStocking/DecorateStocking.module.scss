@@ -1,0 +1,148 @@
+@import '../../variables.scss';
+
+.decorateStockingContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.decorateStockingBody {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.decorateTitle {
+  font-family: $grotesk-semibold;
+  width: 100%;
+  color: $white;
+  text-align: left;
+  align-self: flex-start;
+  padding: 20px 30px 25px;
+
+  h1 {
+    font-size: 27px;
+    font-weight: 500;
+    padding-bottom: 10px;
+  }
+
+  h6 {
+    font-size: 15px;
+    font-weight: 400;
+  }
+}
+
+.stockingPreviewContainer {
+  height: 350px;
+  border-radius: 18px;
+  margin: 16px;
+  background-color: $white;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stocking {
+  height: 300px;
+  max-width: 250px;
+}
+
+.decoratePickerContainer {
+  flex: 1;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+.SMSTabs {
+  padding-top: 15px;
+}
+
+.decorateTypeContainer {
+  flex: 1;
+  width: 100%;
+  padding: 20px 16px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
+  box-sizing: border-box;
+}
+
+.decorateTypeTitle {
+  align-self: flex-start;
+  color: #1b1b1b;
+  font-family: $grotesk-bold;
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.decorateTypePicker {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.submitStockingButton {
+  margin: 10px 30px 50px;
+  height: 50px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.blockPickerContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (min-width: 480px) {
+  .decorateStockingContainer {
+    width: 400px;
+    height: 900px;
+  }
+
+  .decoratePickerContainer {
+    height: 325px;
+  }
+
+  .decorateTypePicker {
+    overflow-x: scroll;
+    padding-bottom: 10px;
+  }
+
+  .backdrop {
+    width: 400px;
+    height: 900px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .decorateTypePicker {
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+
+    &::-webkit-scrollbar {
+      display: none; /* Safari and Chrome */
+    }
+  }
+}

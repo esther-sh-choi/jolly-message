@@ -1,0 +1,99 @@
+@import '../../variables.scss';
+
+.headerContainer {
+  z-index: 2;
+}
+
+.header {
+  position: static;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainLeft {
+  height: 100%;
+}
+
+.logoButton {
+  background: transparent;
+  border: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  height: 100%;
+  padding: 0 15px;
+  cursor: pointer;
+
+  .logo {
+    height: 30px;
+    object-fit: contain;
+  }
+}
+
+.mainRight {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: row-reverse;
+
+  .menuButton {
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    padding: 10px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.extraButton {
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.backButton {
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.backdrop {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  transition: 1000ms;
+}
+
+.backdrop.close {
+  display: none;
+}
+
+.menuContainer {
+  top: -56px;
+  height: 100%;
+  width: 100%;
+  transition: 0.5s;
+  position: relative;
+  right: -100%;
+}
+
+.menuContainer.open {
+  right: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .backdrop {
+    width: 400px;
+    height: 900px;
+  }
+}
